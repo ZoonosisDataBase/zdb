@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<?php
+//conectando ao BD:
+//include_once("suaconsulta.php");
+?>
+<html lang="pt-br">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176063971-1"></script>
+		<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+ 		gtag('config', 'UA-176063971-1');
+		</script>
+		<title>ZDB População</title>
+		<link rel="shortcut icon" href="images/logotopo.jpg" type="image/x-icon">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+		
+			<!-- Header -->
+				<div id="header">
+				
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo"><img src="images/logobg.png" alt="" 
+						width="25%" height="25%" srcset="images/logobg.png 2x, images/logobg.png 3x,images/logobg.png 4x"></a></h1>
+						
+					<!-- Nav -->
+						<nav id="nav">
+						
+							<ul>
+								<li><a href="populacao.html"><b>Início</b></a></li>
+								<li><a href="covid-zoo.html"><b>Coronavírus <i>x</i> Zoonoses</b></a></li>
+								<li><a href="swot.html"><b>Matriz SWOT</b></a></li>
+								<li><a href="gut.html"><b>Matriz GUT</b></a></li>
+								<li>
+									<a href="#"><b>Saiba Mais</b></a>
+									<ul>
+										<li><a href="#">Região Norte</a>
+										<ul>
+										<li><a href="N1.html" target="_blank">Casos por ano</a></li>
+										<li><a href="N2.html" target="_blank">População total</a></li>
+										<li><a href="N3.html" target="_blank">População metropolitana</a></li>
+										<li><a href="N4.html" target="_blank">Coleta do lixo</a></li>
+										<li><a href="N5.html" target="_blank">Saneamento</a></li>
+										</ul>
+										</li>
+										
+										<li><a href="#">Região Nordeste</a>
+										<ul>
+										<li><a href="NE1.html" target="_blank">Casos por ano</a></li>
+										<li><a href="NE2.html" target="_blank">População total</a></li>
+										<li><a href="NE3.html" target="_blank">População metropolitana</a></li>
+										<li><a href="NE4.html" target="_blank">Coleta do lixo</a></li>
+										<li><a href="NE5.html" target="_blank">Saneamento</a></li>
+										</ul>
+										</li>
+										
+										<li><a href="#">Região Sul</a>
+										<ul>
+										<li><a href="S1.html" target="_blank">Casos por ano</a></li>
+										<li><a href="S2.html" target="_blank">População total</a></li>
+										<li><a href="S3.html" target="_blank">População metropolitana</a></li>
+										<li><a href="S4.html" target="_blank">Coleta do lixo</a></li>
+										<li><a href="S5.html" target="_blank">Saneamento</a></li>
+										</ul>
+										</li>
+										
+										<li><a href="#">Região Sudeste</a>
+										<ul>
+										<li><a href="SE1.html" target="_blank">Casos por ano</a></li>
+										<li><a href="SE2.html" target="_blank">População total</a></li>
+										<li><a href="SE3.html" target="_blank">População metropolitana</a></li>
+										<li><a href="SE4.html" target="_blank">Coleta do lixo</a></li>
+										<li><a href="SE5.html" target="_blank">Saneamento</a></li>
+										</ul>
+										</li>
+										
+										<li><a href="#">Região Centro Oeste</a>
+										<ul>
+										<li><a href="CO1.html" target="_blank">Casos por ano</a></li>
+										<li><a href="CO2.html" target="_blank">População total</a></li>
+										<li><a href="CO3.html" target="_blank">População metropolitana</a></li>
+										<li><a href="CO4.html" target="_blank">Coleta do lixo</a></li>
+										<li><a href="CO5.html" target="_blank">Saneamento</a></li>
+										</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="current"><a href="consulta.html"><b>Sua Consulta</b></a></li>
+							</ul>
+						</nav>
+				</div>
+				
+			<!-- CTA -->
+				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Em construção</h2>
+						</header>
+					</div>
+				</section>
+				
+			<!-- Gigantic Heading -->
+				<section class="wrapper style2">
+					<div class="container">
+						<header class="major">
+						<font color="#000000">
+							<h2>Faça uma consulta</h2></font>
+							<p><font color="#000000">Consulte a zoonose mais recorrente de acordo com os parâmetros que deseja.</font></p>
+						</header>
+					</div>
+				</section>
+				
+			<!-- Formulario -->
+				<form class="wrapper style1" action="suaconsulta.php" method="POST">
+				<center>
+				<div class="container">
+				<div class="row gtr-200">
+					<section class="col-4 col-12-narrower">
+						<div class="box highlight">
+							<label>Região:</label>
+							<select id="regiao">
+								<option selected disabled value="">Selecione</option>
+								<option>Norte</option>
+								<option>Nordeste</option>
+								<option>Sul</option>
+								<option>Sudeste</option>
+								<option>Centro-Oeste</option>
+							</select>
+						</div>
+					</section>
+					
+					<section class="col-4 col-12-narrower">
+					<div class="box highlight">
+						<label>Gênero:</label>
+						<select id="genero">
+							<option selected disabled value="">Selecione</option>
+							<option>Feminino</option>
+							<option>Masculino</option>
+						</select>
+					</div>
+					</section>
+					
+					<section class="col-4 col-12-narrower">
+					<div class="box highlight">
+						<label>Faixa etária:</label>
+						<select id="classif_etaria">
+							<option selected disabled value="">Selecione</option>
+							<option>0-4 anos</option>
+							<option>5-14 anos</option>
+							<option>15-19 anos</option>
+							<option>20-39 anos</option>
+							<option>49-59 anos</option>
+							<option>60 ou mais</option>
+						</select>
+					</div>
+					</section>
+					
+					<section class="col-4 col-12-narrower">
+					<div class="box highlight">
+						<label>Escolaridade:</label>
+						<select id="escolaridade">
+							<option selected disabled value="">Selecione</option>
+							<option>Fundamental 1 incompleto</option>
+							<option>Fundamental 1 completo</option>
+							<option>Fundamental 2 incompleto</option>
+							<option>Fundamental 2 completo</option>
+							<option>Médio incompleto</option>
+							<option>Médio completo</option>
+							<option>Superior incompleto</option>
+							<option>Superior completo</option>
+							<option>Analfabeto</option>
+							<option>Não se aplica</option>
+							<option>Em Branco/Ignorado</option>
+						</select>
+					</div>
+					</section>
+					
+					<section class="col-4 col-12-narrower">
+					<div class="box highlight">
+						<label>Município de extrema pobreza?</label>
+						<select id="mun_extr_pobreza">
+							<option selected disabled value="">Selecione</option>
+							<option>Sim</option>
+							<option>Não</option>
+						</select>
+					</div>
+					</section>
+					
+					<section class="col-4 col-12-narrower">
+						<button type="submit">Consultar</button>
+					</section>
+				</div>
+				</div>				
+				</center>
+				</form>
+			
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<center>
+							<h4><font color="#000000"><b>Suporte:</b></font></h4>
+							<img src="images/logobhig.png" alt="" width="20%" height="20%">
+							<a href="http://www.ufabc.edu.br/" target="_blank" id="logo"><img src="images/logoufabc.png" alt="" width="15%" 
+							height="15%"></a>	
+						</center>
+					</div>
+					
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Zoonosis DataBase.</li><li><a href="mailto:zdb.zoonosisdatabase@gmail.com" class="email">
+								<i>zdb.zoonosisdatabase@gmail.com</i></a></li>
+							</ul>
+						</div>
+				</div>
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
